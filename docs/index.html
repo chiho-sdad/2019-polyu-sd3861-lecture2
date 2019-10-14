@@ -5,6 +5,8 @@
     <style>
            body {
        font-family: 'Averia Libre', cursive;
+    }
+    h1{font-family: 'Averia Sans Libre', cursive;
 }
         h1 {
             font-size: 80px;
@@ -21,7 +23,7 @@
 </head>
 
 <body>
-    <h1>Want a new mountain?</h1>
+    <h1 id="primary-font">Want a new mountain?</h1>
     <svg class="pop" id="svg" width="300" height="300" viewbox="0 0 100 100">
         <filter id="blur">
             <feGaussianBlur stdDeviation="1" />
@@ -29,7 +31,7 @@
         <path class="slidein" id="mountain" fill="#ab9457" d="" />
     </svg>
 
-    <button onclick="generateMountain()">Make my own mountain</button>
+    <button class="primary-font" onclick="generateMountain()">Make my own mountain</button>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
@@ -40,7 +42,7 @@
             });
         });
     </script>
-<h1>Try it out</h1>
+<h1 class="secondary-font">Try it out</h1>
 
 </body>
 
